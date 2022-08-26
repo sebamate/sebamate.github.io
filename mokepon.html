@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8"/>
+        <title>POKEMON!</title>
+        <script src="./js/mokepon.js"></script>
+        <link rel="stylesheet" href="./styles.css">
+
+    </head>
+
+    <body>
+        
+        <section id= "seleccionar-mascota"> 
+            <h1 class="titulo">Super Pets Battle ⭐</h1>
+
+
+            <h2 class="subtitulo" >Elige tu Mascota: </h2>
+
+            <div class="tarjetas">
+
+                <input  type="radio" name="mascota" id="squartle" />
+                <label class= "tarjeta-de-pokemon" for="squartle">
+                    <p>Thor</p>
+                    <img class="imagen" src="./assets/thorcito.jpg" alt="Squartle">
+                </label>
+                
+                <input type="radio" name="mascota" id="bulbasaur" />
+                <label class= "tarjeta-de-pokemon" for="bulbasaur">
+                    <p>Niebla</p>
+                    <img class="imagen" src="./assets/niebla.jpg" alt="Bulbasaur">
+                </label>
+                
+                <input type="radio" name="mascota" id="charmander" />
+                <label class= "tarjeta-de-pokemon" for="charmander">
+                    <p>Apolo</p>
+                    <img class="imagen" src="./assets/apolo.JPG" alt="Charmander">
+                    </label>                               
+                
+                
+            </div>
+            
+            
+
+            <button id="boton-mascota">Seleccionar</button>
+
+        </section>
+        
+
+        <section id= "seleccionar-ataque">
+
+            <h1 class="titulo">Super Pets Battle ⭐</h1>
+
+            <h2 class="subtitulo">Elige tu Ataque: </h2>
+
+            <div class="tarjetas-ataques">
+                <button id="boton-fuego" class="boton-de-ataque">Fuego 🔥</button>
+                <button id="boton-agua" class="boton-de-ataque">Agua 💧</button>
+                <button id="boton-tierra" class="boton-de-ataque">Tierra 🌱</button>
+            </div>
+
+        </section>
+
+        <section id="grid">
+
+
+            <div class="grid1">
+                <p><span id="mascota-jugador"></span> tiene <span id="vidas-jugador">3</span> vidas</p>
+                <div id="ataques-del-jugador"></div>
+            </div>
+                        
+            <div class="grid2">
+                <p><span id ="mascota-enemigo"></span> tiene <span id="vidas-enemigo">3</span> vidas</p>
+                <div id="ataques-del-enemigo"></div>
+                            
+            </div> 
+
+        </section> 
+
+        <div>
+
+            <div id="resultado"></div>
+            
+        </div>
+
+            
+        
+        <section id="reiniciar">
+            <button id="boton-reiniciar">Reiniciar</button>
+        </section> 
+
+        
+        
+        
+      
+    </body>
+</html>
